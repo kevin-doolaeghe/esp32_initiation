@@ -29,13 +29,13 @@ Si aucun autre périphérique USB n'est connecté alors la carte sera connectée
 sudo usermod -aG dialout,tty ${USER}
 ```
 
-### 4. Réinitialisation de la mémoire FLASH
+### Réinitialisation de la mémoire FLASH
 
 ```
-esptool.py --port /dev/ttyUSB0 erase_flash
+esptool.py --chip esp32 --port /dev/ttyUSB0 erase_flash
 ```
 
-### 5. Ecriture du firmware dans la mémoire FLASH
+### Chargement du firmware
 
 ```
 esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x1000 [firmware].bin
