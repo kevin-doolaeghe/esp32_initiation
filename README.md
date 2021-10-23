@@ -65,4 +65,4 @@ esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x1000 
 - [Utilisation du module EPS32-CAM avec Arduino® - Le Blog Gotronic](https://www.gotronic.fr/blog/guides/utilisation-du-module-eps32-cam-avec-arduino/)
 - [Installation du firware Tasmota sur ESP32](https://tasmota.github.io/docs/ESP32/)
 - [Programmation d'une carte ESP32-CAM via une carte Arduino Uno](https://www.youtube.com/watch?v=q-KIpFIbRMk)
-- [Erreur `rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))`](https://github.com/espressif/arduino-esp32/issues/3195)
+- [Erreur `rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))`](https://github.com/espressif/arduino-esp32/issues/577)
