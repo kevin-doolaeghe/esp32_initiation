@@ -48,7 +48,7 @@ esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x1000 
 
 2. Télécharger les fichiers requis pour flasher le firmware :
 ```
-wget https://github.com/arendst/Tasmota-firmware/tree/main/static/webcam
+wget -r --no-parent https://github.com/arendst/Tasmota-firmware/tree/main/static/webcam
 cd webcam
 ```
 
