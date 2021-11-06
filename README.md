@@ -27,7 +27,7 @@ ls -l /dev/ttyUSB*
 sudo apt install minicom
 ```
 
-* Connexion au périphérique avec l'utilitaire `minicom` :
+* Connexion au périphérique `ttyUSB0` avec l'utilitaire `minicom` :
 ```
 minicom -D /dev/ttyUSB0
 ```
@@ -61,8 +61,9 @@ esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x1000 
 ## Sources
 
 - [Dépôt Git de l'utilitaire `esptool`](https://github.com/espressif/esptool)
-- [Chargement d'une carte ESP32-CAM sous Tasmota](https://easydomoticz.com/forum/viewtopic.php?f=24&p=94316)
+- [Driver CH340 de la carte ESP32-CAM-MB](https://github.com/juliagoda/CH341SER)
 - [Installation du driver pour le composant CH340 du module USB](https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all)
+- [Chargement d'une carte ESP32-CAM sous Tasmota](https://easydomoticz.com/forum/viewtopic.php?f=24&p=94316)
 - [Utilisation du module EPS32-CAM avec Arduino® - Le Blog Gotronic](https://www.gotronic.fr/blog/guides/utilisation-du-module-eps32-cam-avec-arduino/)
 - [Installation du firware Tasmota sur ESP32](https://tasmota.github.io/docs/ESP32/)
 - [Programmation d'une carte ESP32-CAM via une carte Arduino Uno](https://www.youtube.com/watch?v=q-KIpFIbRMk)
